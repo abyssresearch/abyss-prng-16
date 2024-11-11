@@ -4,7 +4,7 @@
 #include <stdint.h>
 
 struct wsp_prng_16_s {
-  uint32_t word;
+  uint32_t fusion;
   uint32_t increment;
 };
 
