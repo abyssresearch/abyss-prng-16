@@ -13,8 +13,8 @@ Read more [here](https://williamstaffordparsons.github.io/wsp-prng-16/).
 
 int main(void) {
   struct wsp_prng_16_s s = {
-    .fusion = 0,
-    .increment = 0
+    .increment = 0,
+    .increment_offset = 0
   };
   unsigned char i = 0;
 
