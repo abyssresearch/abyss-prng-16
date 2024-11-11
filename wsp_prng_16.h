@@ -4,10 +4,10 @@
 #include <stdint.h>
 
 struct wsp_prng_16_s {
-  uint32_t a;
-  uint32_t b;
+  uint32_t word;
+  uint32_t increment;
 };
 
-void wsp_prng_16_randomize(struct wsp_prng_16_s *s);
+uint16_t wsp_prng_16_randomize(struct wsp_prng_16_s *s);
 
 #endif

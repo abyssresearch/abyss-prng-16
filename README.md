@@ -13,15 +13,14 @@ Read more [here](https://williamstaffordparsons.github.io/wsp-prng-16/).
 
 int main(void) {
   struct wsp_prng_16_s s = {
-    .a = 0,
-    .b = 0
+    .word = 0,
+    .increment = 0
   };
   unsigned char i = 0;
 
   while (i != 10) {
-    wsp_prng_16_randomize(&s);
     i++;
-    printf("Result %u is %u.\n", i, s.a & 0xFFFF);
+    printf("Result %u is %u.\n", i, wsp_prng_16_randomize(&s));
   }
 
   return 0;
